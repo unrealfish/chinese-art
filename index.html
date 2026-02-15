@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>中国传统艺术风雅录</title>
+<style>
+:root { --ink: #1f1a17; --paper: #f6f0e4; --vermillion: #9f1d22; --gold: #c79a3b; --shadow: rgba(28, 16, 9, 0.18); }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Noto Serif SC", "Songti SC", "STSong", serif; color: var(--ink); background: radial-gradient(circle at 20% 10%, rgba(199, 154, 59, 0.16) 0, transparent 45%), radial-gradient(circle at 80% 80%, rgba(159, 29, 34, 0.1) 0, transparent 40%), var(--paper); line-height: 1.8; }
+.container { width: min(1060px, 92%); margin: 0 auto; }
+header { position: relative; padding: 5.5rem 0 4rem; text-align: center; }
+header::before, header::after { content: ""; position: absolute; top: 2rem; width: 120px; height: 120px; border: 2px solid rgba(159, 29, 34, 0.35); border-radius: 50%; }
+header::before { left: 10%; }
+header::after { right: 10%; }
+h1 { margin: 0; font-size: clamp(2rem, 4vw, 3.4rem); letter-spacing: 0.2em; color: var(--vermillion); }
+.subtitle { margin-top: 0.9rem; font-size: 1.05rem; }
+nav { margin-top: 2rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+nav a { text-decoration: none; color: var(--ink); border: 1px solid rgba(31, 26, 23, 0.35); padding: 0.45rem 1rem; border-radius: 999px; transition: all 0.25s ease; }
+nav a:hover { background: var(--vermillion); color: #fff; border-color: var(--vermillion); }
+main { padding-bottom: 4rem; }
+.intro { background: rgba(255, 255, 255, 0.55); border: 1px solid rgba(31, 26, 23, 0.16); border-radius: 18px; padding: 1.6rem; box-shadow: 0 8px 20px var(--shadow); }
+.grid { display: grid; gap: 1.6rem; margin-top: 2rem; }
+section.card { background: rgba(255, 255, 255, 0.72); border: 1px solid rgba(31, 26, 23, 0.16); border-radius: 18px; padding: 1.8rem; box-shadow: 0 8px 18px var(--shadow); position: relative; overflow: hidden; }
+section.card::before { content: ""; position: absolute; inset: 0; background: linear-gradient(130deg, rgba(199, 154, 59, 0.16), transparent 30%); pointer-events: none; }
+h2 { margin-top: 0; color: var(--vermillion); font-size: 1.65rem; }
+.tag { display: inline-block; margin-bottom: 0.7rem; padding: 0.15rem 0.7rem; border-radius: 999px; border: 1px solid rgba(159, 29, 34, 0.5); font-size: 0.85rem; }
+ul { margin: 0.4rem 0 0; padding-left: 1.2rem; }
+footer { text-align: center; padding: 1.2rem; border-top: 1px solid rgba(31, 26, 23, 0.15); font-size: 0.95rem; }
+@media (min-width: 820px) { .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+</style>
+</head>
+<body>
+<header class="container">
+<h1>中国传统艺术风雅录</h1>
+<p class="subtitle">一页览尽千年文脉：书法、国画与剪纸的东方美学</p>
+<nav>
+<a href="#calligraphy">书法</a>
+<a href="#painting">国画</a>
+<a href="#papercut">剪纸</a>
+</nav>
+</header>
+<main class="container">
+<article class="intro">
+中国传统艺术承载着中华民族的审美精神与生活智慧。笔墨之间见风骨，丹青之中有山河，剪纸纹样寄托着吉祥与祝愿。本页将带你快速了解三种最具代表性的传统艺术门类。
+</article>
+<div class="grid">
+<section class="card" id="calligraphy">
+<span class="tag">笔墨精神</span>
+<h2>书法</h2>
+<p>书法被誉为"无声的乐章"，以线条表达节奏与情感。篆、隶、楷、行、草五体各具风貌，体现了字形与心性的统一。</p>
+<ul>
+<li>代表审美：中锋用笔、提按顿挫、章法布局。</li>
+<li>文化意义：修身养性，传承汉字之美。</li>
+<li>经典范本：《兰亭序》《九成宫醴泉铭》。</li>
+</ul>
+</section>
+<section class="card" id="painting">
+<span class="tag">丹青意境</span>
+<h2>国画</h2>
+<p>国画强调"外师造化，中得心源"，常以山水、花鸟、人物为题材。讲究留白与意境，通过墨色浓淡展现气韵生动。</p>
+<ul>
+<li>核心语言：笔墨、设色、留白、题跋与印章。</li>
+<li>常见门类：工笔重细致，写意重神韵。</li>
+<li>美学追求：诗、书、画、印的综合统一。</li>
+</ul>
+</section>
+<section class="card" id="papercut">
+<span class="tag">民间巧艺</span>
+<h2>剪纸</h2>
+<p>剪纸是中国民间艺术瑰宝，以纸为材、以剪代笔，常见于节庆装饰。对称、镂空与寓意图案共同构成鲜明视觉符号。</p>
+<ul>
+<li>常见题材：福字、生肖、花卉、喜鹊登梅。</li>
+<li>制作特色：阴刻阳刻结合，图形简练生动。</li>
+<li>文化寓意：祈福纳祥，表达对美好生活的向往。</li>
+</ul>
+</section>
+</div>
+</main>
+<footer>
+传统不止于传承，更在于当代生活中的再创造。
+</footer>
+</body>
+</html>
